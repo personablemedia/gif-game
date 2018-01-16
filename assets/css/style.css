@@ -1,0 +1,58 @@
+body {
+    background: rgb(255, 255, 255);
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: 100%;
+    height: 800px;
+}
+
+p {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-shadow: 1px 3px red;
+    color: black;
+}
+
+.buttons {
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}
+
+.search {
+    width: 100%;
+}
+
+form {
+    padding: 13px 0;
+    background: #333;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#searchInput {
+    text-align: center;
+}
+
+#submitButton {
+    color: white;
+    background: red;
+}
+
+.coolGifs {
+    width: 100%;
+    position: left;
+}
+.divContent {
+    float: left;
+    width: 25%;
+}
+
+.giphy-embed {
+  border: 9px black;
+}

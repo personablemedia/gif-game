@@ -1,34 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Giphy API</title>
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script type="text/javascript" src="./assets/javascript/game.js"></script>
-  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gif Tastic</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+  <!-- Google Fonts -->
+
+
+
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+
 </head>
 <body>
-  <div class="container">
-    <p>GIF GAME VERSION 1.0</p>
-    <iframe src="https://giphy.com/embed/Xf77tCC1Jsru0" width="400" height="325" frameBorder="0" class="giphy-embed" style="border:1px solid blue"></iframe>
-    <p>
-      <a href="https://media.giphy.com/media/Xf77tCC1Jsru0/giphy.gif"></a>
-    </p>
-    <div class="buttons">
-    </div>
-    <div class="search">
-    <form>
-      <div>
-        <input type="text" id="searchInput" name="searchInput" placeholder="Find a Gif" size="10" min="1" max="25">
-        <button id="submitButton">Add</button>
+  <div class = "container">
+    <div class = "row controls">
+      <div class = "col-md-8 buttons">
+
+        <!-- insert buttons here -->
+
       </div>
-    </form>
-    <br>
+      <div class = "col-md-4 search-div">
+        <!-- insert search box and button here -->
+        <form class = "form-inline">
+          <div class="form-group mx-sm-3 mb-2">
+            <label for="input" class="sr-only">Search Pokemon</label>
+            <input type="text" class="form-control" id="input" placeholder="Search Pokemon Name">
+          </div>
+          <button type="submit" id="search-button" class="btn btn-primary mb-2">Search</button>
+        </form>
+      </div>
     </div>
-    <div class="myGifs">
+
+    <div class = "row" id = "results">
+
+    <!-- Images will be added dynamically -->
+
     </div>
+
+
   </div>
-  </div>
+
+  <!--Javascript file -->
+  <script src="assets/javascript/game.js"></script>
+
 </body>
 </html>
